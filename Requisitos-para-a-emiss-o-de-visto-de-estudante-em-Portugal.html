@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Visa Requirements - Portugal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>متطلبات إصدار إقامة طالب في البرتغال</h1>
+<h2>Requisitos para a emissão de visto de estudante em Portugal</h2>
+
+<div class="buttons">
+    <button onclick="window.open('https://www.sef.pt/')">Visit SEF Website</button>
+    <button onclick="copyContent()">Copy Content</button>
+    <button onclick="window.print()">Print</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Arabic</th>
+            <th>Portuguese</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>جواز سفر صالح</td>
+            <td>Passaporte válido</td>
+        </tr>
+        <tr>
+            <td>صورة شخصية</td>
+            <td>Fotografia tipo passe</td>
+        </tr>
+        <tr>
+            <td>إثبات التسجيل في مؤسسة تعليمية</td>
+            <td>Comprovativo de matrícula em instituição de ensino</td>
+        </tr>
+        <tr>
+            <td>إثبات السكن</td>
+            <td>Comprovativo de alojamento</td>
+        </tr>
+        <tr>
+            <td>إثبات الموارد المالية</td>
+            <td>Comprovativo de meios de subsistência</td>
+        </tr>
+        <tr>
+            <td>تأمين صحي</td>
+            <td>Seguro de saúde</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function copyContent() {
+        const content = `
+        متطلبات إصدار إقامة طالب في البرتغال
+        Requisitos para a emissão de visto de estudante em Portugal
+
+        جواز سفر صالح - Passaporte válido
+        صورة شخصية - Fotografia tipo passe
+        إثبات التسجيل في مؤسسة تعليمية - Comprovativo de matrícula em instituição de ensino
+        إثبات السكن - Comprovativo de alojamento
+        إثبات الموارد المالية - Comprovativo de meios de subsistência
+        تأمين صحي - Seguro de saúde
+        `;
+        navigator.clipboard.writeText(content).then(() => {
+            alert('Content copied to clipboard!');
+        }, (err) => {
+            alert('Failed to copy content: ', err);
+        });
+    }
+</script>
+
+</body>
+</html>
